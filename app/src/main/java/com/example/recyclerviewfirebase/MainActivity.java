@@ -3,6 +3,7 @@ package com.example.recyclerviewfirebase;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -12,11 +13,14 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 public class MainActivity extends AppCompatActivity {
 
     TextView tvMsg, tvObj, tvColl;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
+    FirebaseStorage storage = FirebaseStorage.getInstance();
     DatabaseReference myRef = database.getReference("msg");
     DatabaseReference myRefObj = database.getReference("Epi/contact");
     DatabaseReference myRefColl = database.getReference("tabContacts");
@@ -100,4 +104,19 @@ public class MainActivity extends AppCompatActivity {
 
         }
     };
+
+    public void storageClick(View view) {
+        StorageReference storageReference = storage.getReference();
+        StorageReference ref = storageReference.child("imagesEpi/imgs");
+
+        //ref.putFile();
+
+
+
+    }
+
+    public void galleryClick(View view) {
+        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+
+    }
 }
