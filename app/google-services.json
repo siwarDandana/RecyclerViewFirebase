@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1092190659423",
+    "firebase_url": "https://recyclerviewvermeg-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "recyclerviewvermeg",
+    "storage_bucket": "recyclerviewvermeg.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092190659423:android:9279ed2996cf20e1c84cea",
+        "android_client_info": {
+          "package_name": "com.example.recyclerviewfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092190659423-87086hho1b4i3ncuvb1d7ag039p9nfe3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ-epjIUxMbffOuycuUlVoSrC3zAgx3c8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1092190659423-87086hho1b4i3ncuvb1d7ag039p9nfe3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
